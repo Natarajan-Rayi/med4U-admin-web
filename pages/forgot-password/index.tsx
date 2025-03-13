@@ -9,15 +9,12 @@ import {
   Grid,
   styled
 } from '@mui/material';
-import type { ReactElement } from 'react';
 import { useState } from 'react';
-import BaseLayout from 'src/layouts/BaseLayout';
 
 import Link from 'src/components/Link';
 import Head from 'next/head';
 
 import Logo from 'src/components/LogoSign';
-import Hero from 'src/content/Overview/Hero';
 
 const HeaderWrapper = styled(Card)(
   ({ theme }) => `
@@ -50,11 +47,10 @@ const LoginCard = styled(Paper)(
 
 function Overview() {
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
 
   const handleLogin = () => {
     // Handle login logic here
-    console.log('Login attempt with:', email, password);
+    console.log('Login attempt with:', email);
   };
 
   return (
