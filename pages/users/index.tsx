@@ -1,17 +1,17 @@
 import Head from 'next/head';
 import SidebarLayout from '@/layouts/SidebarLayout';
-import PageHeader from '@/content/Management/Transactions/PageHeader';
+import PageHeader from '@/content/Management/Users/PageHeader';
 import PageTitleWrapper from '@/components/PageTitleWrapper';
 import { Grid, Container } from '@mui/material';
 import Footer from '@/components/Footer';
 
-import RecentOrders from '@/content/Management/Transactions/RecentOrders';
+import RecentOrders from '@/content/Management/Users/RecentOrders';
 
 function ApplicationsTransactions() {
   return (
     <>
       <Head>
-        <title>Transactions - Applications</title>
+        <title>Users - Applications</title>
       </Head>
       <PageTitleWrapper>
         <PageHeader />
